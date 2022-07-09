@@ -1,0 +1,18 @@
+{
+    "sourceFile": ".github/workflows/deploy.yml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1657391663796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1657391663796,
+            "name": "Commit-0",
+            "content": "name: Deploy\r\n\r\non:\r\n  push:\r\n    branches:\r\n      - main\r\n\r\njobs:\r\n  deploy:\r\n    runs-on: ubuntu-latest\r\n    steps:\r\n      - uses: actions/checkout@v2\r\n      - uses: actions/setup-node@v3\r\n        with:\r\n          node-version: 16\r\n          cache: yarn\r\n      - run: yarn install --frozen-lockfile\r\n\r\n      - name: Build\r\n        run: yarn docs:build\r\n\r\n      - name: Deploy\r\n        uses: peaceiris/actions-gh-pages@v3\r\n        with:\r\n          github_token: ${{ secrets.GITHUB_TOKEN }}\r\n          publish_dir: docs/.vitepress/dist\r\n"
+        }
+    ]
+}
