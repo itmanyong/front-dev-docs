@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1657391663796,
@@ -20,6 +20,10 @@
                 {
                     "date": 1657429359473,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n           cache: yarn\r\n       - run: yarn install --frozen-lockfile\r\n \r\n       - name: Build\r\n-        run: yarn docs:build\r\n+        run: yarn build\r\n \r\n       - name: Deploy\r\n         uses: peaceiris/actions-gh-pages@v3\r\n         with:\r\n"
+                },
+                {
+                    "date": 1657431064450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,5 @@\n       - name: Deploy\r\n         uses: peaceiris/actions-gh-pages@v3\r\n         with:\r\n           github_token: ${{ secrets.GITHUB_TOKEN }}\r\n-          publish_dir: docs/.vitepress/dist\r\n+          publish_dir: dist\r\n"
                 }
             ],
             "date": 1657391663796,
