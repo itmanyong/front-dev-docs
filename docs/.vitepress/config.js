@@ -1,9 +1,9 @@
 /*
- * @FilePath: \vitepress-starter\docs\.vitepress\config.js
+ * @FilePath: \front-dev-docs\docs\.vitepress\config.js
  * @Author: itmanyong itmanyong@gmail.com
  * @CreateDate: Do not edit
  * @LastEditors: itmanyong itmanyong@gmail.com
- * @LastEditTime: 2022-07-10 02:15:55
+ * @LastEditTime: 2022-07-10 13:13:04
  * @Description:
  */
 /*
@@ -19,7 +19,7 @@ export default defineConfig({
   title: "前端开发文档",
   description: "前端开发资源文档汇聚",
   lang: "zh-CN",
-  base: "/",
+  base: "/front-dev-docs/",
   // 暗夜模式
   appearance: true,
   // 忽略文中死链接

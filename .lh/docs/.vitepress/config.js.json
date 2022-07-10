@@ -1,0 +1,18 @@
+{
+    "sourceFile": "docs/.vitepress/config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1657429984766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1657429984766,
+            "name": "Commit-0",
+            "content": "/*\r\n * @FilePath: \\front-dev-docs\\docs\\.vitepress\\config.js\r\n * @Author: itmanyong itmanyong@gmail.com\r\n * @CreateDate: Do not edit\r\n * @LastEditors: itmanyong itmanyong@gmail.com\r\n * @LastEditTime: 2022-07-10 13:13:04\r\n * @Description:\r\n */\r\n/*\r\n * @FilePath: \\vitepress-starter\\docs\\.vitepress\\config.js\r\n * @Author: itmanyong itmanyong@gmail.com\r\n * @CreateDate: Do not edit\r\n * @LastEditors: itmanyong itmanyong@gmail.com\r\n * @LastEditTime: 2022-07-09 22:30:55\r\n * @Description:\r\n */\r\nimport { defineConfig } from \"vitepress\";\r\nexport default defineConfig({\r\n  title: \"前端开发文档\",\r\n  description: \"前端开发资源文档汇聚\",\r\n  lang: \"zh-CN\",\r\n  base: \"/front-dev-docs/\",\r\n  // 暗夜模式\r\n  appearance: true,\r\n  // 忽略文中死链接\r\n  ignoreDeadLinks: true,\r\n  // 最近更新时间\r\n  lastUpdated: true,\r\n  // markdown渲染配置\r\n  markdown: {\r\n    lineNumbers: true,\r\n  },\r\n  themeConfig: {\r\n    logo: \"\",\r\n    nav: [{ text: \"前端\", link: \"/front/react/zh-docs\",activeMatch:'/front/' }],\r\n    sidebar: {\r\n      \"/front/\": [\r\n        {\r\n          text: \"REACT\",\r\n          collapsible: true,\r\n          items: [\r\n            { text: \"文档-REACT\", link: \"/front/react/zh-docs\" },\r\n            { text: \"UI库-Arco\", link: \"/front/react/ui/arco\" },\r\n          ],\r\n        },\r\n        {\r\n          text: \"VUE\",\r\n          collapsible: true,\r\n          items: [\r\n            { text: \"文档-VUE3\", link: \"/front/vue/zh-docs-vue3\" },\r\n            { text: \"文档-VUE2\", link: \"/front/vue/zh-docs-vue2\" },\r\n            { text: \"文档-VueRouter4\", link: \"/front/vue/zh-docs-vue-router4\" },\r\n            { text: \"钩子-Vueuse\", link: \"/front/vue/hooks/vueuse\" },\r\n            { text: \"UI库-Element-Plus\", link: \"/front/vue/ui/elementPlus\" },\r\n            { text: \"UI库-Element2\", link: \"/front/vue/ui/element2\" },\r\n            { text: \"钩子-Antd3\", link: \"/front/vue/ui/antd3\" },\r\n            { text: \"钩子-Arco\", link: \"/front/vue/ui/arco\" },\r\n          ],\r\n        },\r\n        {\r\n          text: \"VITE插件\",\r\n          collapsible: true,\r\n          items: [],\r\n        },\r\n        {\r\n          text: \"WEBPACK插件\",\r\n          collapsible: true,\r\n          items: [],\r\n        },\r\n      ],\r\n    },\r\n    footer: {\r\n      message: `message`,\r\n      copyright: `copyright`,\r\n    },\r\n    // 最后更新文本\r\n    lastUpdatedText: true,\r\n    docFooter: {\r\n      prev: \"上一页\",\r\n      next: \"下一页\",\r\n    },\r\n  },\r\n});\r\n"
+        }
+    ]
+}
